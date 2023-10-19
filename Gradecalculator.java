@@ -5,7 +5,7 @@ public class Gradecalculator {
 	public static void main(String[] args) {
        Scanner sc= new Scanner(System.in);
        int a;
-       float p, total=0,avg=0;
+       int avg=0, total=0;
        int m[]=new int[6];
        System.out.print("enter no of subject ");
        a=sc.nextInt();
@@ -16,9 +16,8 @@ public class Gradecalculator {
     	    total=total+m[i];
        }
        avg=total/a;
-       p=avg *100;
        System.out.println("TOTAL MARKS ="+total);
-    		   System.out.println("AVERAGE PERCENTAGE ="+p);
+    		   System.out.println("AVERAGE PERCENTAGE ="+avg+"%");
     		   System.out.print("The student Grade is: ");
     	        if(avg>=80)
     	        {
